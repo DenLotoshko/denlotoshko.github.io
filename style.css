@@ -1,0 +1,150 @@
+@font-face{
+	font-family: KarloCham-Brush;
+	src:url("fonts/KarloCham-Brush.otf");
+}
+body{
+	margin: 0;
+
+}
+#header{
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	background-color: red;
+	font-family: KarloCham-Brush;
+	z-index: 100;
+	height: 50px;
+}
+a{
+	text-decoration-line: none;
+}
+#header .btn{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px;
+	height: 30px;
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: blue;
+	transition-duration: 200ms;
+	border-color: white
+}
+#header .btn:after{
+	height: 10px;
+	background-color: red;
+}
+#header .btn:hover{
+	background-color: red;
+	color: gold;
+	text-shadow: 0 0 7px #777
+}
+#header .btn .menu{
+	left: 0;
+	text-align: left;
+	background-color: black;
+	position: absolute;
+	top: calc(100% + 5px);
+	padding: 10%;
+	transform: translateY(-50%) scaleY(0);
+	transition-duration: 100ms;	
+	border-radius: 5px;
+}
+#header .btn:hover .menu{
+	transform: translateY(0) scaleY(1);
+}
+#header .btn:hover .menu .cover{
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	height: 5px;
+	width: 100%;
+}
+#header .btn .arr{
+	position: relative;
+	position: absolute;
+	width:20px;
+	display: inline-block;	
+	height:20px;
+	margin: 5px;
+	
+	
+}
+#header .btn .arr::before{
+	content: "";
+	background-color: green;
+	display: inline-block;
+	width: 12px;
+	height: 2px;
+	top: calc(50% - 1px);
+	left: 0;
+	position: absolute;
+	transform: rotate(-45deg);
+	transition-duration: 200ms;
+}
+#header .btn .arr::after{
+	content: "";
+	background-color: green;
+	display: inline-block;
+	width: 12px;
+	height: 2px;
+	top: calc(50% - 1px);
+	right: 0;
+	position: absolute;
+	transform: rotate(45deg);
+	transition-duration: 200ms;
+}
+#header .btn:hover .arr::before{
+	transform: rotate(45deg);
+}
+#header .btn:hover .arr::after{
+	transform: rotate(-45deg);
+}
+#header .btn .menu-btn{
+	font-size: 20px;
+	color: red;
+	text-transform: none;
+
+}
+#header .logo{
+	padding: 0;
+	height: 50px;
+}
+#header .logo img{
+	height: 100%
+}
+#header .btn1{
+
+}
+#header .btn2{
+
+}
+#content{
+min-height: 100vh;
+background-color: white;
+}
+#footer{
+	padding: 50px;
+	background-color: green;
+}
+
+#footer span{
+	margin: 10px;
+	color: red;
+}
+#footer span a{
+	color: red;
+	text-decoration-line: none;
+}
+#footer span a: hover{
+	text-decoration-line: underline;
+}
+#block1 .video{
+	width: 100%;
+}
+.block{
+
+}
