@@ -112,6 +112,14 @@ a{
 	text-transform: none;
 
 }
+#header .btn .menu-btn{
+	font-size: 20px;
+	color: blue;
+	text-transform: none;
+
+}
+
+
 #header .logo{
 	padding: 0;
 	height: 50px;
