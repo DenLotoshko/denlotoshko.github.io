@@ -129,7 +129,10 @@ a{
 	animation:pulsing 2s infinite;
 }
 #header .logo:hover img{
-	
+	height: 100%;
+	animation: wiggling 2s infinite;
+	animation-iteration-count: 2;
+
 }
 
 #header .btn1{
@@ -174,5 +177,54 @@ background-color: white;
 
 }
 @keyframes wiggling{
+	0%  {transform:translateX(0%);}
+	25% {transform:translateX(-10%);}
+	50% {transform:translateX(15%);}
+	75% {transform:translateX(-10%);}
+	100%{transform:translateX(0%);}
+}
+#block2 {
+	background-image: linear-gradient(to top, gold,red,black);
+	padding: 50px;
+	text-align: center;	
 
+}
+#block2 .card .img{
+	width: 250px;
+	height: 150px;
+	background-size: cover;
+}
+#block2 .card .text{
+	padding: 10px;
+	color: red;
+	transition-duration: 200ms; 
+}
+#block2 .card:hover .text{
+	color: green;
+}
+#block2 .card .text .big{
+	padding: 10px;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+#block2 .card .text .small{
+	padding: 10px;
+	font-size: 16px;
+}
+#block2 a:nth-child(1) .card .img{
+	background-image: url("img/1.jpg");
+}
+#block2 a:nth-child(2) .card .img{
+	background-image: url("img/2.jpg");
+}
+#block2 a:nth-child(3) .card .img{
+	background-image: url("img/3.jpg");
+}
+#block2 .card{
+	vertical-align: top;
+	display: inline-block;
+	width: 250px;
+	height: 400px;
+	margin: 25px;
+	background-color: white;
 }
