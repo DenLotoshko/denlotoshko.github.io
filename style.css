@@ -117,8 +117,13 @@ a{
 	height: 50px;
 }
 #header .logo img{
-	height: 100%
+	height: 100%;
+	animation:pulsing 2s infinite;
 }
+#header .logo:hover img{
+	animation:pulsing 2s infinite;
+}
+
 #header .btn1{
 
 }
@@ -149,5 +154,17 @@ background-color: white;
 	width: 100%;
 }
 .block{
+
+}
+@keyframes pulsing{
+	0%  {transform:scale(1);}
+	25% {transform:scale(1.05);}
+	50% {transform:scale(1);}
+	75% {transform:scale(1.05);}
+	100%{transform:scale(1);}
+
+
+}
+@keyframes wiggling{
 
 }
