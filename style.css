@@ -227,4 +227,9 @@ background-color: white;
 	height: 400px;
 	margin: 25px;
 	background-color: white;
+	transition: 200ms;
+}
+#block2 .card:hover{
+	transform: translateY(-20px);
+	box-shadow: 0 15px 20px black;
 }
